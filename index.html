@@ -1,0 +1,34 @@
+<html>
+<body>
+	<div class=”container”>
+		<header><h1>Menú responsivo</h1></header>
+		<nav>
+				<div class=”icon”><i class=fa-fa-bars”</li></div>
+				<div class=”menú_item”>Inicio</div>
+				<div class=”menú_item”>Productos</div>
+				<div class=”menú_item”>Servicios</div>
+				<div class=”menú_item”>Clientes</div>
+				<div class=”menú_item”>Nosotros</div>
+				<div class=”menú_item”>Contactar</div>
+			<nav>
+			<main>
+				<section></section>
+				<section></section>
+			</main>
+		</div>
+		<script>
+			$function() {
+				//Captura del evento para mostrar u ocultar
+				$.(“.icon”).click(function() {
+					$(“.menu_item”).toggle();
+				});
+				$(window).resize(function() {
+					var anchura = $(this).width();
+					if(anchura > 576) {
+						$(“menú_item”).show();
+					}
+				});
+			});
+		</script>
+	</body>
+</html>
