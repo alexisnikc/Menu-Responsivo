@@ -1,0 +1,65 @@
+*{
+	box-sizing: border-box;
+}
+
+.container {
+	margin: 20px auto;
+	width: 80%;
+}
+
+/*Cabecera*/
+header {
+	text-align: center;
+}
+
+/*Menú Responsivo*/
+nav {
+	align-items: center;
+	background-color: #666666;
+	display: flex	;
+	flex-wrap: wrap;
+}
+
+.menu-item {
+	display: none;
+	padding: 0.5em;
+	text-align: center;
+	width: 100%;
+
+.menu-item:hover {
+	background-color: white;
+	color: #666666;
+}
+
+.icon {
+	background-color: white;
+	text-align: right;
+	width: 100%;
+	}
+
+/*Secciones principales*/
+main section {
+	height: 400px;
+}
+
+section: nth-of-type(1) {
+	background-color: green;
+}
+
+section: nth-of-type(2) {
+	background-color: red;
+}
+
+@media screen and (min-width: 576px) {
+	section {
+	float: left;
+	width: 50%;
+}
+
+.icon {
+	display: none;
+	}
+.menu-item {
+	display: inline-block;
+	width: auto;
+}
